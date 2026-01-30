@@ -5,7 +5,6 @@ export async function POST(request: Request) {
   try {
     const { name, email, budget, message } = await request.json();
 
-    // Validation — aligned with form
     if (!name || !email || !message) {
       return NextResponse.json(
         { error: "Missing required fields" },

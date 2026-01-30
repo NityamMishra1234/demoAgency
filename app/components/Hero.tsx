@@ -3,33 +3,28 @@
 import { useRef } from 'react';
 import { motion, useScroll, useTransform, MotionValue } from 'framer-motion';
 
-// 1. UPDATED IMAGES: "High-Tech / Digital / Future" Theme
 const SLIDES = [
     {
         title: "DIGITAL",
         subtitle: "We Redefine",
-        // Abstract Blue/Pink Neon Data Stream
-        img: "/marketing/marketingfour.png",
+        img: "/marketing/marketingthree.webp",
         color: "text-white"
     },
     {
         title: "MARKETING",
         subtitle: "The New Standard",
-        // Yellow/Cyberpunk Street or Abstract Light
         img: "/marketing/marketingone.jpg",
         color: "text-[#EAB308]"
     },
     {
         title: "THAT",
         subtitle: "Data Driven",
-        // Futuristic Server/Grid Room
         img: "/marketing/marketingtwo.jpg",
         color: "text-white"
     },
     {
         title: "SCALES",
         subtitle: "Without Limits",
-        // Modern Minimalist Architecture (Success/Scale)
         img: "/marketing/marketingthree.webp",
         color: "text-white"
     }
@@ -101,7 +96,6 @@ function Slide({ data, progress, range, index }: {
             }}
             className="absolute inset-0 w-full h-full flex items-center justify-center bg-black"
         >
-            {/* Background Image */}
             <motion.div
                 style={{ scale }}
                 className="absolute inset-0 w-full h-full"
@@ -112,16 +106,11 @@ function Slide({ data, progress, range, index }: {
                     className="w-full h-full object-cover"
                 />
 
-                {/* FIX 1: Dark Gradient Overlay 
-                   This makes the top of the image darker so the Navbar is ALWAYS visible 
-                */}
                 <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/60" />
 
-                {/* FIX 2: Overall Tint to make white text pop */}
                 <div className="absolute inset-0 bg-black/40" />
             </motion.div>
 
-            {/* Content Overlay */}
             <div className="relative z-10 text-center px-4">
                 <motion.p
                     style={{ y: yText }}
@@ -131,8 +120,6 @@ function Slide({ data, progress, range, index }: {
                 </motion.p>
 
                 <motion.h1
-                    // REMOVED mix-blend-overlay on the H1 because it can make text vanish on dark backgrounds
-                    // Instead, we rely on the strong contrast + drop-shadow
                     className={`text-[15vw] leading-[0.8] font-black tracking-tighter uppercase drop-shadow-2xl ${data.color}`}
                 >
                     {data.title}

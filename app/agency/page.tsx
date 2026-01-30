@@ -18,16 +18,16 @@ export default function Agency() {
 
             <Navbar />
 
-            {/* 1. HERO: Brutalist Typography */}
+            
             <section className="relative min-h-[80vh] flex flex-col justify-center px-4 md:px-12 pt-32 overflow-hidden">
 
-                {/* Background Glow */}
+                
                 <div className="absolute -top-20 -right-20 w-[50vw] h-[50vw] bg-[#EAB308] rounded-full blur-[120px] opacity-20 pointer-events-none" />
 
-                {/* Grounding Gradient */}
+               
                 <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black pointer-events-none" />
 
-                {/* Content */}
+               
                 <h1 className="relative text-[13vw] leading-[0.85] font-black uppercase tracking-tighter text-white">
                     We Are <br />
                     The Anti <br />
@@ -45,21 +45,16 @@ export default function Agency() {
                 </div>
 
             </section>
-
-
-            {/* 2. STATS (Proof) */}
+ 
             <Stats />
 
-            {/* 3. TEAM (The Minds) */}
             <Team />
 
-            {/* 4. MARQUEE (Culture) */}
             <div className="py-24">
                 <p className="text-center text-white/40 mb-8 uppercase tracking-widest text-sm">Our Philosophy</p>
                 <Marquee />
             </div>
 
-            {/* 5. AWARDS LIST (The Receipt) */}
             <section className="py-32 px-4 md:px-24 border-t border-white/10 bg-zinc-950">
                 <h2 className="text-4xl font-black uppercase mb-16 text-[#EAB308]">Recognition</h2>
                 <div className="flex flex-col">
@@ -80,7 +75,6 @@ export default function Agency() {
                 </div>
             </section>
 
-            {/* 6. CTA */}
             <section className="h-[50vh] flex flex-col items-center justify-center text-center">
                 <h2 className="text-[5vw] font-black uppercase mb-4">Join the Cult.</h2>
                 <p className="text-white/50 mb-8">We are always looking for dangerous talent.</p>
