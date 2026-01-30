@@ -1,8 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+--bg: #0a0a0a;
+  --fg: #ffffff;
+  --muted: #a1a1aa;
+
+  /* aggressive + creative */
+  --accent-1: #6366f1;
+  /* indigo */
+  --accent-2: #22d3ee;
+  /* cyan */
+
+  --gradient: linear-gradient(90deg,
+      var(--accent-1),
+      var(--accent-2));
+  
 }
 
 @theme inline {
