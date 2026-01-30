@@ -84,8 +84,8 @@ export default function Contact() {
                             </div>
                             <div>
                                 <h3 className="text-[#EAB308] font-mono text-sm uppercase tracking-widest mb-1"> The HQ</h3>
-                                <p className="text-lg font-bold">Cyber City, Gurugram</p>
-                                <p className="text-white/50 text-sm">India's Silicon Hub</p>
+                                <p className="text-lg font-bold">Pari Chowk, Noida</p>
+                                <p className="text-white/50 text-sm">India's Tech City</p>
                             </div>
                         </div>
 
@@ -95,7 +95,7 @@ export default function Contact() {
                             </div>
                             <div>
                                 <h3 className="text-[#EAB308] font-mono text-sm uppercase tracking-widest mb-1">Direct Line</h3>
-                                <p className="text-lg font-bold">+91 98765 43210</p>
+                                <p className="text-lg font-bold">+91 9905805143</p>
                                 <p className="text-white/50 text-sm">Mon-Fri (10 AM - 7 PM IST)</p>
                             </div>
                         </div>
